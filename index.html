@@ -2,13 +2,13 @@
 <head>
 <script>
 function affichage(){
-	alert("text Ok !");
+	alert("Test ok !");
 }
 function cacher(){
-	document.getElementById('DuTexte').style.display="None";
+	document.getElementById('img').style.display="None";
 }
 function presenter(){
-	document.getElementById('DuTexte').style.display="Block";
+	document.getElementById('img').style.display="Block";
 }
 
 function controler(){
@@ -26,7 +26,7 @@ function controler(){
 <h2>Boite de dialogue</h2>
 <button onclick="affichage()">Afficher</button>
 <hr/>
-<p id="DuTexte">Ma phrase de texte</p>
+<p id="img"><img src="image.jpg" alt="image" id="img" style="display: none;"></p>
 <button onclick="presenter()">Presenter</button>
 <button onclick="cacher()">Cacher</button>
 <hr/>
